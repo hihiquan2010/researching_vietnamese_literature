@@ -1,0 +1,149 @@
+body {
+  background-image: url("https://raw.githubusercontent.com/hihiquan2010/researching_vietnamese_literature/refs/heads/main/image/bgindex.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.widgetbar {
+  background-color: #5f5f5469;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.widgets {
+  display: flex;
+  width: 240px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-container {
+  width: auto;
+  font-family: "Times New Roman", sans-serif;
+}
+
+.menu-btn {
+  width: 180px;
+  padding: 12px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  text-align: center;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.vertical-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 10px;
+
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.vertical-menu.open {
+  max-height: 500px;
+}
+
+.vertical-menu li a {
+  display: block;
+  padding: 12px 30px;
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s;
+}
+
+.vertical-menu li:last-child a {
+  border-bottom: none;
+}
+
+.vertical-menu li a:hover {
+  background-color: #e9ecef;
+  color: #e0af0d;
+  padding-left: 20px;
+}
+
+.vertical-menu .tacPham {
+  list-style-type: " 🧾  ";
+  display: none;
+}
+
+.vertical-menu .tacPham a {
+  padding-left: 32px;
+  font-size: 16px;
+  color: #0e0f0f;
+}
+
+.vertical-menu .tacPham a:hover {
+  color: #ffffff;
+  background-color: #2c3e50;
+}
+
+.vertical-menu li:hover > .tacPham {
+  display: block;
+}
+
+.search-group {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 400px;
+}
+
+.inp {
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+}
+.btn {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.danhsachdx {
+  position: absolute;
+  width: auto;
+  border: 0px solid #f4efef8d;
+  background: #f4f4f4c1;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.nddx {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.nddx:hover {
+  background-color: #f0f0f0;
+}
+
+.icon i + .icon-text {
+  display: none;
+}
+
+.icon:empty .icon-text,
+icon-home i::before {
+  content: none !important;
+}
+
+.icon:empty .icon-text {
+  display: inline;
+}
